@@ -47,7 +47,7 @@ Reading images directly out of the zip archive works fine single-threaded, but b
 
 Training converges smoothly over 15 epochs with no evidence of overfitting — validation loss decreases and plateaus without diverging upward. Final validation MSE ≈ **0.011**.
 
-![Training vs Validation Loss](loss_curve.png)
+<img width="998" height="496" alt="image" src="https://github.com/user-attachments/assets/e0fbd80e-0b0c-444a-ba7e-96074617b051" />
 
 ## Tools
 
