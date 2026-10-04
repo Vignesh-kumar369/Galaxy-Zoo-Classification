@@ -46,8 +46,8 @@ Reading images directly out of the zip archive works single-threaded but breaks 
 
 Training converges smoothly over 15 epochs. Validation loss decreases and plateaus without rising. Final validation MSE ≈ 0.011 (RMSE about 0.10). This is measured on my own validation split, so it is not comparable to Kaggle leaderboard scores.
 
-![Training vs Validation Loss] (<img width="891" height="594" alt="Training vs Validation Loss" src="https://github.com/user-attachments/assets/4d852c06-8531-45f5-b41e-5b46fb1a853b" />
-)
+![Training vs Validation Loss] <img width="891" height="594" alt="Training vs Validation Loss" src="https://github.com/user-attachments/assets/4d852c06-8531-45f5-b41e-5b46fb1a853b" />
+
 
 ## Limitations
 
