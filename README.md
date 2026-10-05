@@ -1,4 +1,4 @@
-# Galaxy Zoo Morphology Classification: CNN Pipeline
+# Galaxy Zoo Morphology Regression: CNN Pipeline
 
 A PyTorch pipeline for galaxy morphology prediction on the Kaggle *Galaxy Zoo: The Galaxy Challenge* dataset, built as an applied project to gain hands-on experience with image-based deep learning and CNN architecture design.
 
