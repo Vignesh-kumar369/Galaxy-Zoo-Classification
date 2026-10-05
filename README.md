@@ -44,7 +44,7 @@ Reading images directly out of the zip archive works single-threaded but breaks 
 
 ## Results
 
-Training converges smoothly over 15 epochs. Validation loss decreases and plateaus without rising. Final validation MSE ≈ 0.011 (RMSE about 0.10). This is measured on my own validation split, so it is not comparable to Kaggle leaderboard scores.
+Training converges smoothly over 15 epochs. Validation loss decreases and plateaus without rising. Final validation MSE ≈ 0.011 (RMSE about 0.10). This is measured on my own validation split, so it is not comparable to Kaggle leaderboard scores. A mean-prediction baseline (training-set mean vote fractions, scored on the same validation split) gives RMSE 0.1639. The CNN reaches about 0.105 (MSE 0.011) in a single unseeded run.
 
 ![Training vs Validation Loss](https://github.com/user-attachments/assets/4d852c06-8531-45f5-b41e-5b46fb1a853b)
 
@@ -52,7 +52,6 @@ Training converges smoothly over 15 epochs. Validation loss decreases and platea
 
 * Plain MSE treats the 37 outputs as independent, although the decision tree links them (each question's answers add up to its parent's vote fraction).
 * Images are resized whole (424×424 to 128×128) without cropping to the galaxy, so some detail is lost.
-* No baseline was run (for example predicting the average vote fractions for every galaxy), and results come from a single run.
 * A variant with BatchNorm after each convolution plateaued at validation MSE ≈ 0.027 and was not investigated, so no conclusion is drawn about BatchNorm. The final model has no BatchNorm.
 * Results come from a single unseeded run.
 
